@@ -24,12 +24,12 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://yamabiko.proxy.rlwy.net:24962/railway?useSSL=false&allowPublicKeyRetrieval=true
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: ImLTONZtSQpzCVnQbTnEnGIIIoKJneRC
-      # SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/davalt_db?useSSL=false
+      # SPRING_DATASOURCE_URL: jdbc:mysql://yamabiko.proxy.rlwy.net:24962/railway?useSSL=false&allowPublicKeyRetrieval=true
       # SPRING_DATASOURCE_USERNAME: root
-      # SPRING_DATASOURCE_PASSWORD: rootpassword
+      # SPRING_DATASOURCE_PASSWORD: ImLTONZtSQpzCVnQbTnEnGIIIoKJneRC
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/davalt_db?useSSL=false
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: userpassword
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
 
 volumes:
